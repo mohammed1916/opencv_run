@@ -9,6 +9,7 @@ using namespace std;
 int main(int argc, char **argv) {
     vector<string> candidates = {
         "dataset\\leftImg8bit_trainvaltest\\test\\berlin\\berlin_000000_000019_leftImg8bit.png",
+        "..\\dataset\\leftImg8bit_trainvaltest\\test\\berlin\\berlin_000000_000019_leftImg8bit.png",
     };
 
     // Simple CLI: if --no-gui is present, don't call imshow/waitKey; instead
