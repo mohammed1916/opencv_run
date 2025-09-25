@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(OpenCVTest)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 set(OpenCV_DIR "C:/opencv/build/x64/vc16/lib")
 
