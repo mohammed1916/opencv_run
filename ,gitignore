@@ -1,0 +1,43 @@
+build/*
+dataset/*
+
+# C++ build artifacts
+*.exe
+*.obj
+*.o
+*.so
+*.dll
+*.lib
+*.a
+*.out
+*.app
+*.dSYM/
+*.pch
+*.pdb
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+Debug/
+Release/
+
+# Visual Studio
+.vs/
+*.vcxproj*
+*.sln
+ipch/
+*.user
+*.opensdf
+*.sdf
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Others
+*.log
+*.tmp
+*.swp
