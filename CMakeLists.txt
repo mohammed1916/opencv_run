@@ -16,5 +16,8 @@ message(STATUS "OpenCV libs: ${OpenCV_LIBS}")
 # add_executable(transforms base/transforms/main.cpp)
 # target_link_libraries(transforms ${OpenCV_LIBS})
 
-add_executable(segmentation base/segmentation/main.cpp)
-target_link_libraries(segmentation ${OpenCV_LIBS})
+# add_executable(segmentation base/segmentation/main.cpp)
+# target_link_libraries(segmentation ${OpenCV_LIBS})
+
+add_executable(dnn_segmentation base/dnn_segmentation/main.cpp)
+target_link_libraries(dnn_segmentation ${OpenCV_LIBS})
