@@ -15,6 +15,7 @@
 *.sln
 *.vcxproj*
 /bin
+.github
 
 *.jpg
 *.jpeg
