@@ -49,7 +49,9 @@ int main(int argc, char** argv) {
         }
         
         // Build Python command to run SAM with CUDA support
-        string pythonCmd = "python tools/sam_wrapper.py \"" + imgPath + "\" --output_dir " + outDir + " --mode " + samMode;
+        // The C++ executable runs from project root, so always use tools/sam_wrapper.py
+        string samScript = "tools/sam_wrapper.py";
+        string pythonCmd = "python " + samScript + " \"" + imgPath + "\" --output_dir " + outDir + " --mode " + samMode;
         
         cout << "Running SAM with CUDA acceleration..." << endl;
         cout << "Command: " << pythonCmd << endl;
