@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
         "..\\dataset\\leftImg8bit_trainvaltest\\test\\berlin\\berlin_000000_000019_leftImg8bit.png",
     };
 
-    // Simple CLI: if --no-gui is present, don't call imshow/waitKey; instead
+    // CLI: if --no-gui is present, don't call imshow/waitKey; instead
     // write transformed images to the output directory `out_images`.
     bool noGui = false;
     for (int i = 1; i < argc; ++i) {
@@ -75,7 +75,7 @@ int main(int argc, char **argv) {
     //Rotation
     Mat rotated;
     Point2f center(img.cols/2.0F, img.rows/2.0F);
-    double angle = 45; // degrees
+    double angle = 45; 
     double scale = 1.0;
     Mat rotMat = getRotationMatrix2D(center, angle, scale);
     warpAffine(img, rotated, rotMat, img.size());
