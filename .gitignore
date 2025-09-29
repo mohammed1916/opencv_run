@@ -38,3 +38,12 @@
 *.mpeg
 *.3gp
 *.m4v
+
+*.onnx
+*.pb
+*.h5
+*.pt
+*.pth
+*.tflite
+*.caffemodel
+*.prototxt
